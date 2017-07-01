@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.Login"
+             Title="Bienvenido">
+
+
+    <ContentPage.ToolbarItems>
+
+
+        <ToolbarItem Text="Inicio"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Salir"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_1"
+                     ></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+    <StackLayout BackgroundColor="DarkGray"
+                 Padding="20"
+                 VerticalOptions="Center">
+
+        <Label x:Name="LoginLabel"
+               TextColor="White"
+               FontSize="15"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"></Label>
+      
+    
+        <!--
+        <DatePicker x:Name="MainDatePicker"
+                    MinimumDate="3/8/2016"
+                    MaximumDate="5/8/2016"
+                    ></DatePicker>
+        
+        <Label x:Name="MainLabel"
+               Text="{Binding Date, Source={x:Reference MainDatePicker}}"
+               FontSize="30"
+               HorizontalOptions="Center"
+               TextColor="White"></Label>
+          <Image HeightRequest="200" WidthRequest="200" Source="{Binding foto}"></Image>
+                          
+        -->
+        <ListView x:Name="ListaFamilia"
+                  HasUnevenRows="True"
+                  ItemSelected="OnItemSelected"
+                  BackgroundColor="Black">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Grid HeightRequest="5"/>
+                            <StackLayout Orientation="Vertical"
+                                     Padding="5"
+                                     BackgroundColor="Green">
+
+                                <Label Text="{Binding Descripcion2}" Font="Large" TextColor="Black" ></Label>
+                                <Image HeightRequest="130" WidthRequest="130" Source="{Binding Foto2}" ></Image>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+             
+
+
+        <Button Clicked="Button_Clicked"
+                Text="Notificacion"
+                BackgroundColor="Blue"
+                TextColor="White"
+                HorizontalOptions="Start"></Button>
+
+
+    </StackLayout>
+</ContentPage>

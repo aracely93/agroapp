@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.Presentacion.LoginAdm">
+
+    <ContentPage Title="ADM"
+                 BackgroundColor="Green">
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     BackgroundColor="Green">
+
+            <Button Text="Cliente"
+                    Clicked="Cliente_Clicked"
+                    FontSize="20"
+                    
+                    >
+            </Button>
+            <Button Text="Administrador"
+                    FontSize="20"
+                    Clicked="Administrador_Clicked">
+                
+            </Button>
+            <Button Text="Agente"
+                    FontSize="20"
+                    Clicked="Agente_Clicked">
+            </Button>
+            
+        </StackLayout>
+        
+    </ContentPage>
+
+    <ContentPage Title="SERVICE">
+        <StackLayout>
+            <Label Text=""></Label>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage Title="FACT">
+        <StackLayout>
+            <Label Text=""></Label>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage Title="REP">
+        <StackLayout>
+            <Label Text=""></Label>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Inicio"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="Inicio_Clicked"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Salir"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="Salir_Clicked"
+                     ></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+
+    
+    <StackLayout BackgroundColor="DarkGray"
+                 Padding="20"
+                 VerticalOptions="Center">
+
+        <Label x:Name="LabelAdm" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+    </StackLayout>
+</TabbedPage>

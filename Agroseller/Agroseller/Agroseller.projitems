@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e29d4aaf-e1b8-44e5-a92b-4c0f7669ecb1</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Agroseller</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DAdministrador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DAgente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DCliente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DFamilia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DPedido.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DProducto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DSexo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\RestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\InfoList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NAdministrador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NAgente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NCliente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NFamilia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NPedido.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NProducto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NSexo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\adminis_pedido.xaml.cs">
+      <DependentUpon>adminis_pedido.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\ConexionSingleton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\DLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\Consumo_animal.xaml.cs">
+      <DependentUpon>Consumo_animal.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\LoginAdm.xaml.cs">
+      <DependentUpon>LoginAdm.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Negocio\NLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarAdministrador.xaml.cs">
+      <DependentUpon>PackAdministrarAdministrador.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarAgente.xaml.cs">
+      <DependentUpon>PackAdministrarAgente.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarCliente.xaml.cs">
+      <DependentUpon>PackAdministrarCliente.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\PageHome.xaml.cs">
+      <DependentUpon>PageHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Presentacion\Super_foods.xaml.cs">
+      <DependentUpon>Super_foods.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\PageHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\Consumo_animal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\Super_foods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\LoginAdm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarAdministrador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\PackAdministrarAgente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)AImage\images.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)AImage\user.png" />
+    <Content Include="$(MSBuildThisFileDirectory)AImage\users-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Presentacion\adminis_pedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

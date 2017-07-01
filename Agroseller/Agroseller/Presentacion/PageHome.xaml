@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.PageHome"
+             Title="Login">
+    
+  
+    <StackLayout BackgroundColor="DarkGray"
+                 Padding="60"
+               
+                 VerticalOptions="Center">
+
+        <Label x:Name="UserLabel"
+               TextColor="White"
+               FontSize="15"></Label>
+
+        <Entry x:Name="UserEntry"
+               BackgroundColor="Gray"></Entry>
+
+        <Label x:Name="PasswordLabel"
+               TextColor="White"
+               FontSize="15"></Label>
+        
+        <Entry x:Name="PasswordEntry"
+               IsPassword="true"
+               BackgroundColor="Gray"></Entry>
+
+        <Label x:Name="PrivilegioLabel"
+               TextColor="White"
+               FontSize="15"></Label>
+        
+        <Picker x:Name="PrivilegioPicker"
+                SelectedIndexChanged="PrivilegioPicker_SelectedIndexChanged"
+                ></Picker>
+
+        <Button Clicked="Button_Clicked"
+                Text="Click here"
+                BackgroundColor="Green"
+                TextColor="White"></Button>
+        
+        <Label x:Name="ResultLabel"
+               TextColor="White"
+               FontSize="20"></Label>
+
+    </StackLayout>
+    
+</ContentPage>

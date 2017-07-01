@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.MenuPage"
+             xmlns:local="clr-namespace:Agroseller">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+
+                <Button Text="Producctos"></Button>
+                <Button Text="Super foods"></Button>
+                <Button Text="Consumo animal"></Button>
+                <Button Text="Contactenos"></Button>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <local:MainPage></local:MainPage>
+    </MasterDetailPage.Detail>
+
+
+</MasterDetailPage>

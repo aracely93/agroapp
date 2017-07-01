@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.Presentacion.Consumo_animal">
+
+    <ContentPage.ToolbarItems>
+
+
+        <ToolbarItem Text="Inicio"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Salir"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_1"
+                     ></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout>
+
+        <Label Text="Consumo Animal"
+               FontSize="15"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <SearchBar x:Name="ProductoSearchBar"
+                   SearchButtonPressed="ProductoSearchBar_SearchButtonPressed"
+                   TextChanged="ProductoSearchBar_TextChanged"
+                   ></SearchBar>
+
+        <ListView x:Name="ListaProducto"
+                  HasUnevenRows="True"
+                  BackgroundColor="Black">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Grid HeightRequest="5"/>
+                            <StackLayout Orientation="Horizontal"
+                                     Padding="5"
+                                     BackgroundColor="Green">
+
+
+                                <Image HeightRequest="90" WidthRequest="130" Source="{Binding Foto2}" ></Image>
+                                <Label Text="{Binding Descripcion2}" Font="Large" TextColor="Black" ></Label>
+                                
+
+                                <!--
+                                    <Image HeightRequest="130" WidthRequest="130" Source="{Binding foto2}" ></Image>
+-->
+                            </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    
+</ContentPage>

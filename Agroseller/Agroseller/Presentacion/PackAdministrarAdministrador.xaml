@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agroseller.Presentacion.PackAdministrarAdministrador">
+
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Clear"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Add Administrador"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_1"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Search Administrador"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_2"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Edit Administrador"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_3"
+                     ></ToolbarItem>
+
+        <ToolbarItem Text="Show All Administrador"
+                     Priority="0"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_4"
+                     ></ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+
+
+
+    <StackLayout BackgroundColor="Green">
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <StackLayout BackgroundColor="Transparent" Padding="10">
+
+                    <Label x:Name="LabelCodigo"
+               Text="Code:"
+               Margin="0,20,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="LabelNombres"
+               Text="Name:" 
+               Margin="0,25,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="LabelApellidos"
+               Text="Last Name:"
+               Margin="0,25,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="LabelCi"
+               Text="Ci: "
+               Margin="0,25,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="LabelTelefono"
+               Text="Phone:"
+               Margin="0,25,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="LabelSexo"
+               Text="Sexo"
+                            Margin="0,25,0,0"
+               FontSize="15"></Label>
+
+                    <Label x:Name="ResultLabel"
+                                      Margin="0,25,0,0"
+               FontSize="20"></Label>
+
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <StackLayout BackgroundColor="Transparent" Padding="10">
+
+                    <Entry x:Name="EntryCodigo"
+               Keyboard="Numeric"
+               BackgroundColor="Gray"></Entry>
+
+                    <Entry x:Name="EntryNombres"
+               Keyboard="Text"
+               BackgroundColor="Gray"></Entry>
+
+                    <Entry x:Name="EntryApellidos"
+               Keyboard="Text"
+               BackgroundColor="Gray"></Entry>
+
+                    <Entry x:Name="EntryCi"
+               Keyboard="Numeric"
+               BackgroundColor="Gray"></Entry>
+
+                    <Entry x:Name="EntryTelefono"
+               Keyboard="Telephone"
+               BackgroundColor="Gray"></Entry>
+
+                    <Picker x:Name="PickerSexo"
+                SelectedIndexChanged="PickerSexo_SelectedIndexChanged"
+                ></Picker>
+
+                    <Button x:Name="ButtonAdd" Clicked="ButtonAdd_Clicked"
+                Text="Click here"
+                BackgroundColor="LightGreen"
+                TextColor="White"></Button>
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
